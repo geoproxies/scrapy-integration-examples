@@ -7,7 +7,10 @@ import json
 from bs4 import BeautifulSoup
 from geoproxies import ProxySettings
 
-
+"""
+Read extensive documentation on using the ProxySettings utility lib on:
+http://proxysettings.readthedocs.io/en/latest/gettingstarted.html
+"""
 class NationalitySpider(scrapy.Spider):
     name = "nationality"
 
@@ -15,7 +18,7 @@ class NationalitySpider(scrapy.Spider):
         self.params = {}
         # Please, replace the token value below, with your Geoproxies account token
         self.proxy_settings = ProxySettings(
-            token="7ce374a3-5616-44b1-9fed-6746c86c3e5d")
+            token="24f2f5b3-1867-42ac-994c-57140022fb46")
 
     def start_requests(self):
         u = 'http://rdrct.info/geo.php'
